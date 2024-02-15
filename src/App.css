@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+
+#root {
+  --pal-ag-beige: #fae5cc;
+  --pal-ag-green: #5fa447;
+  --pal-ag-violet: #493b5e;
+  --pal-ag-lavendar: #90708C;
+  --pal-ag-blue: #AEC5EB;
+
+  --paper-shadows: drop-shadow(2px 2px 4px #3a3a3a);
+}
+
+.App {
+  text-align: center;
+
+  font-family: "Patrick Hand", "cursive";
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  background: url("./img/paper-texture/weathered.jpg") var(--pal-ag-green);
+  background-blend-mode: multiply;
+  background-size: 256px;
+
+  filter: var(--paper-shadows);
+
+  font-family: "Protest Riot", sans-serif;
+  color: white;
+
+  width: 100%;
+  height: 10vh;
+  margin: 0;
+
+  padding: 1.5vh 0;
+}
+
+h1::after {
+  content: "";
+  display: block;
+
+  background: url("./img/paper-texture/clean.jpg") var(--pal-ag-green);
+  background-blend-mode: overlay;
+  background-size: 256px;
+
+  height: 1vh;
+  background-color: var(--pal-ag-violet);
+  width: 90%;
+
+  filter: var(--paper-shadows);
+}
+
+h1 * {
+  filter: var(--paper-shadows);
+}
+
+input {
+  display: block;
+  font-size: 1.5em;
+  text-align: center;
+
+  max-width: 80%;
+  margin-top: 0.1em;
+}
+
+input {
+  display: block;
+  font-size: 1.5em;
+  text-align: center;
+
+  max-width: 80%;
+  margin-top: 0.1em;
+}
+
+input[type="checkbox"] {
+  width: 40px;
+  height: 40px;
+
+  accent-color: var(--pal-ag-lavendar);
+}
+
+.charlies-foot {
+  width: 100%;
+  height: 5vh;
+
+  background: url("./img/paper-texture/weathered.jpg") var(--pal-ag-green);
+  background-blend-mode: multiply;
+  background-size: 256px;
+
+  filter: var(--paper-shadows);
+
+  font-size: xx-small;
+  text-align: right;
+  color: var(--pal-ag-green);
+  font-weight: lighter;
+}
+
+.charlies-foot hr {
+  background: url("./img/paper-texture/clean.jpg") var(--pal-ag-green);
+  background-blend-mode: overlay;
+  background-size: 256px;
+
+  height: 1vh;
+  border: none;
+  background-color: var(--pal-ag-violet);
+  filter: var(--paper-shadows);
+  width: 90%;
+}
+
+.App-header {
+  background: url("./img/paper-texture/clean.jpg") var(--pal-ag-beige);
+  background-blend-mode: multiply;
+  background-size: 256px;
+
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.Library-Spreadsheet {
+
+  margin: 0.5em 0;
+
+  flex: 2;
+
+  height: 10px;
+  width: 80vw;
+
+  background: url("./img/paper-texture/clean.jpg") var(--pal-ag-blue);
+  background-blend-mode: multiply;
+  background-size: 256px;
+
+  filter: var(--paper-shadows);
+
+  padding: 1vw;
+
+  border-radius: 3px;
+}
+
+.Library-Body {
+  overflow-y: scroll;
+  height: 78%;
+}
+
+.Library-Row {
+  display: block;
+  width: 100%;
+  text-align: center;
+
+  background-color: var(--pal-ag-beige);
+
+  padding: 0.3vw;
+  box-sizing: border-box;
+
+  border: 1px dotted var(--pal-ag-violet);
+}
+
+.Library-Row > div {
+  display: inline-block;
+  text-align: left;
+  font-size: smaller;
+}
+
+.Library-Row > div:nth-child(1) {
+  width: 15%;
+  font-size: 1em;
+}
+
+.Library-Row > div:nth-child(2) {
+  width: 20%;
+  font-size: 1em;
+}
+
+.Library-Row > div:nth-child(3) {
+  width: 17%;
+}
+
+.Library-Row > div:nth-child(4) {
+  width: 8%;
+}
+
+.Library-Row > div:nth-child(5) {
+  width: 8%;
+}
+
+.Library-Row > div:nth-child(6) {
+  width: 20%;
+}
+
+.Library-Row > div:nth-child(7) {
+  width: 7%;
+}
+
+.Library-Row > div:nth-child(8) {
+  width: 5%;
+  text-align: right;
+}
+
+.Library-Row:nth-child(odd) {
+  background: url("./img/paper-texture/weathered.jpg") var(--pal-ag-beige);
+  background-blend-mode: multiply;
+  background-size: 256px;
+}
+
+.Library-Row:nth-child(even) {
+  background: url("./img/paper-texture/clean.jpg") var(--pal-ag-green);
+  background-blend-mode: overlay;
+  background-size: 256px;
+}
+
+@media screen and (max-width: 900px) {
+  .mobile-no {
+    display: none;
+  }
+}
